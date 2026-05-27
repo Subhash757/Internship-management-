@@ -1,0 +1,13 @@
+{
+  "name": "ims-root",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm start --prefix IMS-master/server",
+    "client": "npm run start:windows --prefix IMS-master/client",
+    "dev:all": "npx concurrently \"npm run dev\" \"npm run client\"",
+    "build": "npm run build --prefix IMS-master/client"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
